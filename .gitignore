@@ -1,0 +1,189 @@
+# ============================================================
+# TUIDB .gitignore
+# 按平台 / 编辑器 / 运行时 / 临时文件分组，按需删减
+# ============================================================
+
+# ---------- 操作系统 ----------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.AppleDouble
+.LSOverride
+Icon[^r]
+*~.nib
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ---------- 编辑器 / IDE ----------
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.code-workspace
+
+# JetBrains (IDEA / WebStorm / PyCharm / GoLand ...)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+!src/**/out/
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+.*.sw?
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+.#*
+auto-save-list/
+
+# Sublime Text
+*.sublime-workspace
+
+# Nova / Zed / TextMate
+.nova/
+.zed/
+.tm_properties
+
+# ---------- 临时 / 备份 / 日志 ----------
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+*.old
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+.cache/
+tmp/
+temp/
+*.crdownload
+*.part
+*.!ut
+
+# 办公软件锁文件（会被误放进笔记仓库）
+~$*
+.~lock.*#
+
+# ---------- 密钥 / 本地环境 ----------
+# 切勿提交任何凭证
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+.private/
+
+# ---------- Node.js（若引入 Markdown 工具链：lint / 静态站生成） ----------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.pnp.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+.nyc_output/
+dist/
+build/
+.next/
+.nuxt/
+.output/
+.turbo/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# ---------- Python（若引入校验脚本） ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.eggs/
+
+# ---------- Go / Rust（若引入 CLI 工具） ----------
+# Go
+*.exe
+*.test
+*.out
+vendor/
+
+# Rust
+target/
+
+# ---------- Markdown / 文档工具产物 ----------
+_book/
+_site/
+site/
+public/
+*.epub
+*.mobi
+*.pdf.tmp
+.marp/
+.pandoc/
+*.fo
+*.aux
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+
+# ---------- 云同步冲突副本 ----------
+*conflict*
+*(冲突副本*
+*的冲突副本*
+*.sync-conflict-*
+
+# ---------- CNB / Gitee / GitHub 本地 ----------
+.cnb/
+.gitee/
+github-pages/
