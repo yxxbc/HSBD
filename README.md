@@ -1,4 +1,4 @@
-# 大学深埋 The university is deeply buried.（TUIDB）
+# 大雪深埋 Heavy snow buried deeply（HSBD）
 
 > 励志语录，亦是自己的领悟，欢迎pr！
 
